@@ -1,5 +1,80 @@
-* {
+html {
+  font-family: 'Nunito';
+}
+
+body{
+  background: #130f0d;
+  color: #fff;
+}
+
+.boards {
+  display: flex;
+  margin-top: 32px;
+  /* justify-content: space-between; */
+}
+
+.board {
+  background: #141316;
+  border: 1px solid #fD951F11;
+  border-radius: 4px;
+  margin: 0 16px;
+}
+
+.board h3 {
+  padding: 16px;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  color: #FD951FCC;
+}
+
+.dropzone {
+  padding: 16px;
+  min-width: 282px;
+  min-height: 200px;
+}
+
+.card{
+  padding: 16px;
+  width: 250px;
+  margin: 25px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  background: #1A1A1C;
+  box-shadow: 0 2px 2px -1px #FD951FCC;
+}
+
+.card .status{
+  width: 30px;
+  height: 8px;
+  background: gray;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.status.green {
+  background: #23b2ac;
+}
+
+.status.blue {
+  background: #33adff;
+}
+
+.status.red {
+  background: red;
+}
+
+.highlight{
+  background: #FD951F08;
+}
+
+.card, .dropzone{
+  transition: .4s;
+}
+
+.is-dragging{
+  cursor: move;
+  opacity: 0.3;
+}
+
+.over {
+  background: #4CD13711;
 }
