@@ -7,7 +7,6 @@ function log(message){
 const cards = document.querySelectorAll('.card');
 const dropzones = document.querySelectorAll('.dropzone');
 
-
 /** our cards */
 cards.forEach(card => {
   card.addEventListener('dragstart', dragstart);
@@ -21,7 +20,7 @@ function dragstart() {
 }
 
 function drag(){
-  // log('CARD: Is draggin');
+  // log('CARD: Is dragging');
 }
 
 function dragend(){
@@ -43,8 +42,8 @@ function dragenter(){
 
 function dragover(){
   this.classList.add('over');
-  const cardBeignDragged = document.querySelector('.is-dragging');
-  this.appendChild(cardBeignDragged);
+  const cardBeingDragged = document.querySelector('.is-dragging');
+  this.appendChild(cardBeingDragged);
 }
 
 function dragleave(){
